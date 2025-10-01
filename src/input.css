@@ -32,7 +32,7 @@ body {
 }
 
 .nav-link {
-  @apply hover:underline underline-offset-8 decoration-2 decoration-[#F9A51A] transition-all duration-300 text-white;
+  @apply hover:underline underline-offset-8 decoration-2 decoration-[#F9A51A] transition-all duration-500 text-white;
 }
 .btn{
 
