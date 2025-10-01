@@ -36,7 +36,7 @@ body {
 }
 .btn{
 
-  @apply text-[18px]  inline-flex font-medium py-2 px-5 border-2 border-white rounded-full text-white hover:text-black hover:bg-white transition-all duration-300;
+  @apply text-base md:text-[18px]  inline-flex font-medium py-2 px-3 md:px-5 border-2 border-white rounded-full text-white hover:text-black hover:bg-white transition-all duration-300;
 
 }
 
