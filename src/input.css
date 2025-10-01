@@ -42,7 +42,7 @@ body {
 }
 
 .five-pillars .pillar img {
-  @apply w-full h-full object-cover transition-transform duration-500;
+  @apply w-full h-full object-cover transition-transform duration-500 ;
 }
 
 .five-pillars .pillar:hover img {
@@ -54,4 +54,29 @@ body {
 }
 
    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  transition: all 1s ease-in-out;
+  z-index: 1000;
+}
+
+/* Sticky state */
+header.sticky {
+  position: fixed;
+  top: 0;
+  transform: translateY(-100%); 
+  animation: slideDown 1s ease forwards;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+  }
 }

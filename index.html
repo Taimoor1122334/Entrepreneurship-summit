@@ -11,7 +11,8 @@
 </head>
 <body>
 
-   <header class="flex justify-between items-center w-full px-6 lg:px-[60px] xl:px-[120px] bg-black py-6">
+   <header class=" w-full sticky top-0 z-50   bg-black py-6">
+    <div class="max-w-[1320px] mx-auto px-6 flex justify-between items-center">
   <!-- Logo -->
   <img src="assets/Images/Rectangle 5.svg" alt="Entrepreneurship Summit Logo" class="w-[180px] lg:w-[245px] h-auto">
 
@@ -19,9 +20,9 @@
   <nav class="hidden lg:flex">
     <ul class="flex gap-10 xl:gap-20 text-white font-[500] text-[16px] md:text-[18px] font-Montserrat">
       <li><a href="#" class="nav-link">Home</a></li>
-      <li><a href="#" class="nav-link">About</a></li>
-      <li><a href="#" class="nav-link">Who should attend</a></li>
-      <li><a href="#" class="nav-link">Why attend</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#who-should-attend" class="nav-link">Who should attend</a></li>
+      <li><a href="#why-attend" class="nav-link">Why attend</a></li>
     </ul>
   </nav>
 
@@ -39,15 +40,16 @@
         d="M4 6h16M4 12h16M4 18h16" />
     </svg>
   </button>
+  </div>
 </header>
 
 <!-- Mobile Nav -->
 <nav id="mobile-menu" class="hidden lg:hidden bg-black text-white px-6 py-4">
   <ul class="flex flex-col gap-6 font-[500] text-[16px] font-Montserrat">
     <li><a href="#" class="nav-link">Home</a></li>
-    <li><a href="#" class="nav-link">About</a></li>
-    <li><a href="#" class="nav-link">Who should attend</a></li>
-    <li><a href="#" class="nav-link">Why attend</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+    <li><a href="#who-should-attend" class="nav-link">Who should attend</a></li>
+    <li><a href="#why-attend" class="nav-link">Why attend</a></li>
     <li><a href="#" class="header-btn inline-block">Register Now</a></li>
   </ul>
 </nav>
@@ -66,8 +68,8 @@
 
 <!-- About section  -->
 
-<section class="bg-black py-[60px] lg:py-[120px] px-6 lg:px-[60px] xl:px-[120px] relative" >
-    <div class="flex flex-col md:flex-row gap-10 justify-center items-center" >
+<section id="about" class="bg-black py-[60px] lg:py-[120px] px-6  relative" >
+    <div class="flex flex-col md:flex-row gap-10 justify-center items-center max-w-[1320px] mx-auto" >
         <div class="w-full md:w-[50%] [&_a]:mt-5 pr-10">
             <h3>About The Entrepreneurship Summit</h3>
             <p>The Entrepreneurship Summit is a dynamic gathering designed to inspire, equip, and connect the next generation of business leaders, innovators, and change-makers. With a focus on practical strategies and bold ideas, the Summit highlights the tools and insights needed to launch, grow, and sustain successful ventures in today’s competitive landscape.<br><br>  
@@ -88,9 +90,10 @@ Through engaging keynote talks, interactive workshops, and meaningful networking
 
 <!-- who should attend section -->
 
- <section class=" five-pillars pt-[60px] lg:pt-[120px] px-6 lg:px-0 lg:pr-[60px] xl:pr-[120px] bg-black">
+ <section id="who-should-attend" class=" five-pillars pt-[60px] lg:pt-[120px] px-6 lg:px-0 lg:pr-[60px] xl:pr-[120px] bg-black">
 
-    <div class="pr-5 lg:pl-[60px] xl:pl-[120px] pb-[60px] lg:pb-[120px]" style="background-image: linear-gradient(to left top,#242424, #1d1d1d,#161616,#0d0d0d, #000000);;">
+    <div class="  pr-5 lg:pl-[60px] xl:pl-[120px] pb-[60px] lg:pb-[120px]" style="background-image: linear-gradient(to left top,#242424, #1d1d1d,#161616,#0d0d0d, #000000);;">
+      <div class="max-w-[1320px] mx-auto">
         <h2 class="text-center mb-10 lg:mb-20 " >Who Should Attend</h2>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 "
 data-aos="zoom-in" 
@@ -139,12 +142,13 @@ data-aos="zoom-in"
        </div>
         
     </div>
+    </div>
 </section>
 
 <!-- why Attend section  -->
 
-<section class="bg-[#242424] py-16 lg:py-32 px-6 lg:px-16 xl:px-32 relative">
-  <div class="flex flex-col-reverse md:flex-row-reverse gap-10 justify-center items-center">
+<section id="why-attend" class="bg-[#242424] py-16 lg:py-32 px-6  relative">
+  <div class="max-w-[1320px] mx-auto flex flex-col-reverse md:flex-row-reverse gap-10 justify-center items-center">
     
     <!-- Text Content -->
     <div class="w-full md:w-1/2 pl-0 md:pl-10 [&_a]:mt-5 [&_h2]:mb-5">
@@ -170,20 +174,22 @@ data-aos="zoom-in"
 
 <!-- Register Today section  -->
 
-<section class="py-16 lg:py-32 px-6 lg:px-16 xl:px-32 " style="background-image: linear-gradient(to left top, #000000, #0d0d0d, #161616, #1d1d1d, #242424);">
+<section id="register-today" class="py-16 lg:py-32 px-6  " style="background-image: linear-gradient(to left top, #000000, #0d0d0d, #161616, #1d1d1d, #242424);">
+    <div class="max-w-[1320px] mx-auto">
     <div style="background-image: url(assets/Images/iStock-913327824.jpg); background-size: cover; background-position: center; " class="flex flex-col justify-center items-center text-center py-50 px-2 rounded-3xl">
         <h2 class="large-heading">Register Today!</h2>
     </div>
     <h3 class="font-semibold max-w-4xl mt-10 leading-[130%]">Join us in Los Angeles for
 the Entrepreneurship Summit
 </h3>
+</div>
 </section>
 
 <!-- last section   -->
  
 <section class="bg-black relative">
-  <div class="relative h-[200px] lg:h-[300px]">
-    <div class="absolute -top-10 lg:-top-15 left-0 px-6 lg:px-16 xl:px-32">
+  <div class="relative h-[200px] lg:h-[300px] max-w-[1320px] mx-auto px-6 ">
+    <div class="absolute -top-10 lg:-top-15 left-0  ">
       <h4>
         Where innovators and leaders come together to share ideas and strategies for success. Register today to secure your spot and be part of a transformative experience
       </h4>
@@ -206,6 +212,20 @@ the Entrepreneurship Summit
   menuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
   });
+  
+  window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    const triggerPoint = window.innerHeight * 0.5; 
+
+    if (window.scrollY > triggerPoint) {
+      header.classList.add('sticky');
+    } else {
+      header.classList.remove('sticky');
+    }
+  });
+
+
+
 </script>
 
 </body>
