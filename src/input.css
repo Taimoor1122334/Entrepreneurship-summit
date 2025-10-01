@@ -31,8 +31,8 @@ body {
   @apply text-[15px] inline-flex font-medium py-3 px-5 border-2 border-white rounded-full text-white hover:text-black hover:bg-white transition-all duration-300;
 }
 
-.nav-link {
-  @apply hover:underline underline-offset-8 decoration-2 decoration-[#F9A51A] transition-all duration-500 text-white;
+.nav-link.active {
+  @apply underline underline-offset-8 decoration-2 decoration-[#F9A51A] transition-all duration-500 text-white;
 }
 .btn{
 

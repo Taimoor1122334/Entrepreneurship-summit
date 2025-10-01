@@ -19,7 +19,7 @@
   <!-- Desktop Nav -->
   <nav class="hidden lg:flex">
     <ul class="flex gap-10 xl:gap-20 text-white font-[500] text-[16px] md:text-[18px] font-Montserrat">
-      <li><a href="#" class="nav-link">Home</a></li>
+      <li><a href="#home" class="nav-link active">Home</a></li>
       <li><a href="#about" class="nav-link">About</a></li>
       <li><a href="#who-should-attend" class="nav-link">Who should attend</a></li>
       <li><a href="#why-attend" class="nav-link">Why attend</a></li>
@@ -41,21 +41,22 @@
     </svg>
   </button>
   </div>
-</header>
-
-<!-- Mobile Nav -->
+  <!-- Mobile Nav -->
 <nav id="mobile-menu" class="hidden lg:hidden bg-black text-white px-6 py-4">
   <ul class="flex flex-col gap-6 font-[500] text-[16px] font-Montserrat">
-    <li><a href="#" class="nav-link">Home</a></li>
+    <li><a href="#home" class="nav-link">Home</a></li>
     <li><a href="#about" class="nav-link">About</a></li>
     <li><a href="#who-should-attend" class="nav-link">Who should attend</a></li>
     <li><a href="#why-attend" class="nav-link">Why attend</a></li>
     <li><a href="#register" class="header-btn inline-block">Register Now</a></li>
   </ul>
 </nav>
+</header>
+
+
 
 <!-- hero section  -->
-<section class="" style="background-image: url(assets/Images/Entrepreneurship\ Summit\ Background\ no\ words.jpg); background-size: cover; background-position: center; height: 100vh;">
+<section id="home" class="" style="background-image: url(assets/Images/Entrepreneurship\ Summit\ Background\ no\ words.jpg); background-size: cover; background-position: center; height: 100vh;">
   <div class="flex flex-col justify-center items-center h-full text-center px-6 max-w-[850px] mx-auto">
     <h1>Fueling Innovation Empowering Leaders</h1>
     <div class=" space-x-2 md:space-x-8">
@@ -282,8 +283,39 @@ Boston, MA 02116
       header.classList.remove('sticky');
     }
   });
+ // hide menu after clicking
+  const mobileLinks = document.querySelectorAll("#mobile-menu a");
+
+mobileLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden"); 
+  });
+});
 
 
+//active link on scroll
+const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+      }
+    });
+  });
 
 </script>
 
